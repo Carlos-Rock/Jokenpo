@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo-ken-po</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <section class="top">
+            <div data-aos="fade-down">
+                <img src="img/logo.svg" alt="Logotipo" class="logo">
+            </div>
+            <div class="placar" data-aos="fade-in" data-aos-duration="900" data-aos-delay="100">
+                <p id="placar-jogador"></p>
+                <p>X</p>
+                <p id="placar-pc"></p>
+            </div>
+    </section>
+    <section class="mid">
+        <div class="jogador" data-aos="fade-right">
+            <p>JOGADOR</p>
+            <img src="img/pedra.svg" alt="Jogador" id="player">
+        </div>
+        <div><h1 data-aos="fade-in" data-aos-duration="900" data-aos-delay="100">VS</h1></div>
+        <div class="computador" data-aos="fade-left">
+            <p>COMPUTADOR</p>
+            <img src="img/pedra.svg" alt="Computador" id="pc">
+        </div>
+    </section>
+
+    <section class="bot">
+        <div class="card" id="pedra" data-aos="fade-up" data-aos-duration="300"><img src="img/pedra.svg" alt=""></div>
+        <div class="card" id="papel" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100"><img src="img/papel.svg" alt=""></div>
+        <div class="card" id="tesoura" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200"><img src="img/tesoura.svg" alt=""></div>
+    </section>
+
+    <section class="result">
+        <div>
+            <img src="img/empate.svg" alt="" id="tela-final">
+            <p class="refresh">Jogar Novamente</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
